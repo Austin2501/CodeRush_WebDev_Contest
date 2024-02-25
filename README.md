@@ -1,6 +1,12 @@
 # Interactive Quiz Website (MindMeldTrivia)
 
 This is a simple website application for conducting a contest with multiple-choice questions.
+<img width="1512" alt="Screenshot 2024-02-26 at 3 52 00 AM" src="https://github.com/Austin2501/CodeRush_WebDev_Contest/assets/91082872/54bd1fa9-f0c5-4876-97f4-bb56a6eb3ef0">
+<img width="1512" alt="Screenshot 2024-02-26 at 3 52 13 AM" src="https://github.com/Austin2501/CodeRush_WebDev_Contest/assets/91082872/bc02ebc6-d6be-4a30-b16b-19d33d07ad79">
+<img width="1512" alt="Screenshot 2024-02-26 at 3 54 16 AM" src="https://github.com/Austin2501/CodeRush_WebDev_Contest/assets/91082872/401a7410-e591-438e-bc0a-c6cb25fa0aad">
+<img width="1512" alt="Screenshot 2024-02-26 at 3 54 33 AM" src="https://github.com/Austin2501/CodeRush_WebDev_Contest/assets/91082872/4b63cb46-5311-4b14-ada9-ef1e95cb906b">
+
+
 
 ## Features
 
