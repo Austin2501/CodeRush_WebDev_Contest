@@ -234,6 +234,11 @@ footer {
     font-size: 18px;
   }
 
+  #answersList {
+    margin-left: 32%;
+  
+  }
+
   /* Adjust circle sizes for smaller screens */
   .circles li {
     width: 15px;
@@ -260,6 +265,12 @@ footer {
     font-size: 16px;
   }
 
+  #answersList {
+    margin-left: 30%;
+  
+  }
+
+  
   /* Further adjust circle sizes for even smaller screens */
   .circles li {
     width: 10px;
@@ -270,4 +281,21 @@ footer {
     width: 50px;
     height: 50px;
   }
+
+}
+  @media (max-width: 450px){
+
+    #answersList {
+      margin-left: 18%;
+    
+    }
+
+  }
+
+  @media (max-width: 350px){
+    #answersList {
+      margin-left: 10%;
+    
+    }
+
 }
