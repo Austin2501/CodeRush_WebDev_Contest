@@ -1,0 +1,273 @@
+/* Import the Exo font from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+/* Reset default margin and padding */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Apply styles to the body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  overflow: hidden;
+}
+/* Apply styles to the h1 */
+h1 {
+  font-family: monospace, sans-serif;
+}
+
+/* Apply styles to the result container */
+#resultContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Apply styles to the answers list */
+#answersList {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-left: 30%;
+  margin-top: 10px;
+
+}
+
+/* Apply styles to the list items in the answers list */
+#answersList li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+  text-align: start;
+  color: #fff;
+}
+
+/* Apply styles to the container */
+.container {
+  position: fixed;
+  width: 100%;
+  top: 25vh;
+}
+
+/* Apply styles to the h1 element in the container */
+.container h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+}
+
+/* Apply styles to the p element in the container */
+.container p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Apply styles to the area */
+.area {
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  width: 100%;
+  height: 100vh;
+}
+
+/* Apply styles to the space */
+.space {
+  margin-bottom: 15px;
+}
+
+/* Apply styles to the footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* background-color: #f1f1f1; */
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Apply styles to the circles */
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Apply styles to the list items in the circles */
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+/* Apply styles to the first list item in the circles */
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+/* Apply styles to the second list item in the circles */
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+/* Apply styles to the third list item in the circles */
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+/* Apply styles to the fourth list item in the circles */
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+/* Apply styles to the fifth list item in the circles */
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+/* Apply styles to the sixth list item in the circles */
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+/* Apply styles to the seventh list item in the circles */
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+/* Apply styles to the eighth list item in the circles */
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+/* Apply styles to the ninth list item in the circles */
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+/* Apply styles to the tenth list item in the circles */
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+/* Define the animate animation */
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) { /* For tablets */
+  #resultContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .container h1 {
+    font-size: 40px;
+  }
+
+  .container p {
+    font-size: 18px;
+  }
+
+  /* Adjust circle sizes for smaller screens */
+  .circles li {
+    width: 15px;
+    height: 15px;
+  }
+
+  .circles li:nth-child(1), .circles li:nth-child(6), .circles li:nth-child(7), .circles li:nth-child(10) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) { /* For smartphones */
+  #resultContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+
+  /* Further adjust circle sizes for even smaller screens */
+  .circles li {
+    width: 10px;
+    height: 10px;
+  }
+
+  .circles li:nth-child(1), .circles li:nth-child(6), .circles li:nth-child(7), .circles li:nth-child(10) {
+    width: 50px;
+    height: 50px;
+  }
+}

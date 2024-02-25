@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.png" type="image/x-icon">
+<title>MindMeldTrivia</title>
+<link rel="stylesheet" href="styles2.css">
+</head>
+<body
+<div>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+  <div class="content">
+    <h1>Welcome to MindMeldTrivia</h1>
+    <div id="questionContainer">
+      <h2>Questionnaire</h2>
+      <p>Please answer the following questions:</p>
+      <form id="questionForm">
+        <div class="question">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="question">
+          <label for="qualification">Qualifications:</label>
+          <input type="text" id="qualification" name="qualification" required>
+        </div>
+        <div class="question">
+          <label for="techKnown">Tech You Know:</label>
+          <input type="text" id="techKnown" name="techKnown" required>
+        </div>
+        <div class="question">
+          <label for="techInterested">Tech You Are Interested In:</label>
+          <input type="text" id="techInterested" name="techInterested" required>
+        </div>
+        <div class="question">
+          <label for="hobbies">Hobbies:</label>
+          <input type="text" id="hobbies" name="hobbies" required>
+        </div>
+        <button type="submit" id="submitBtn">Submit</button>
+      </form>
+      <div id="timer">Time Left: <span id="time">05:00</span></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2024 MindMeldTrivia. All rights reserved. Designed and Developed by Vineet Rawat.</p>
+</footer>
+<script src="script2.js"></script>
+</body>
+</html>

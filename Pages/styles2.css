@@ -1,0 +1,170 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply styles to the body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  overflow: hidden;
+}
+
+/* Apply styles to the h1 element */
+h1 {
+  font-family: monospace;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Apply styles to the h2 element */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Apply styles to the button */
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Apply styles to the button on hover */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Apply styles to the question */
+.question {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+/* Apply styles to the text input */
+input[type="text"] {
+  padding: 8px;
+  font-size: 1rem;
+  width: 95%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Apply styles to the timer */
+#timer {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Apply styles to the time */
+#time {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Apply styles to the background */
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+/* Apply styles to the content */
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Apply styles to the footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Define the slide animation */
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  /* For tablets */
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button,
+  #timer {
+    font-size: 1rem;
+  }
+
+  input[type="text"] {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    padding: 5vmin;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For smartphones */
+  h1,
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  button,
+  #timer {
+    font-size: 0.8rem;
+  }
+
+  input[type="text"] {
+    font-size: 0.8rem;
+  }
+
+  .content {
+    padding: 5vmin;
+    left: 50%;
+    right: -35%;
+  }
+}
